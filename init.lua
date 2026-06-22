@@ -385,6 +385,7 @@ do
   vim.pack.add { gh 'folke/tokyonight.nvim' }
   ---@diagnostic disable-next-line: missing-fields
   require('tokyonight').setup {
+    transparent = true,
     styles = {
       comments = { italic = false }, -- Disable italics in comments
     },
@@ -702,7 +703,8 @@ do
     --
     -- But for many setups, the LSP (`ts_ls`) will work just fine
     -- ts_ls = {},
-
+    svelte = {},
+    ts_ls = {},
     stylua = {}, -- Used to format Lua code
 
     -- Special Lua Config, as recommended by neovim help docs
